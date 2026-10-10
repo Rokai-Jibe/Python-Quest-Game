@@ -1,0 +1,35 @@
+{
+  "app.title": "Python Quest",
+  "menu.map": "Karte", "menu.profile": "Grimoire", "menu.settings": "Einstellungen",
+  "stat.level": "Stufe {n}",
+  "btn.back": "← Zurück", "btn.run": "▶ Zauber wirken",
+  "room.room": "Raum", "room.boss": "Boss",
+  "fb.ok": "Zauber gelungen! +{xp} XP", "fb.ko": "Verfehlt, versuch es nochmal!", "fb.expected": "Erwartet: {v}",
+  "py.loading": "Python wird geladen (erstes Mal ~10 MB)…",
+  "toast.level": "🎉 Stufe {n} erreicht!", "toast.badge": "🏅 Abzeichen: {name}",
+  "profile.badges": "Abzeichen",
+  "badge.first": "Erster Schritt", "badge.five": "Lehrling (5 Räume)", "badge.boss": "Bossjäger",
+  "set.lang": "Sprache", "set.theme": "Hell / Dunkel",
+  "set.export": "Fortschritt exportieren", "set.import": "Fortschritt importieren", "set.reset": "Alles zurücksetzen",
+  "set.copy": "Diesen Code kopieren:", "set.paste": "Code einfügen:", "set.confirm": "Gesamten Fortschritt löschen?",
+
+  "d1.name": "Die Krypta der Variablen", "d1.intro": "Eine Variable ist eine Box für einen Wert. In Python muss kein Typ deklariert werden (anders als Java/C++): x = 5.",
+  "d1r1.q": "Welche Zeile erstellt in Python eine Variable?",
+  "d1r1.a": "x = 5", "d1r1.b": "int x = 5;", "d1r1.c": "var x := 5",
+  "d1r2.q": "Erstelle die Variable name mit dem Wert \"Merlin\" (in Anführungszeichen).",
+  "d1r3.q": "Welchen Typ hat 3.14?",
+  "d1r3.a": "int", "d1r3.b": "float", "d1r3.c": "str",
+  "d1boss.q": "BOSS: Addiere 5 zu hp, sodass print(hp) 15 ausgibt.",
+
+  "d2.name": "Das Labyrinth der Entscheidungen", "d2.intro": "if / elif / else: Der Code wählt seinen Weg. Einrückung (4 Leerzeichen) ersetzt Klammern.",
+  "d2r1.q": "Was folgt nach if mana > 5?",
+  "d2r1.a": "geschweifte Klammern { }", "d2r1.b": "then", "d2r1.c": "ein Doppelpunkt : und Einrückung",
+  "d2r2.q": "Gib im if das Wort cast mit print aus.",
+  "d2boss.q": "BOSS: Gib odd aus, wenn x ungerade ist (nutze x % 2).",
+
+  "d3.name": "Der Turm der Schleifen", "d3.intro": "for wiederholt Code. range(3) ergibt 0, 1, 2.",
+  "d3r1.q": "Was erzeugt range(3)?",
+  "d3r1.a": "0, 1, 2", "d3r1.b": "1, 2, 3", "d3r1.c": "0, 1, 2, 3",
+  "d3r2.q": "Gib i in der Schleife aus, um 0 1 2 zu erhalten (eine pro Zeile).",
+  "d3boss.q": "BOSS: Gib die Zahlen von 1 bis 5 aus, eine pro Zeile."
+}

@@ -1,0 +1,35 @@
+{
+  "app.title": "Python Quest",
+  "menu.map": "Map", "menu.profile": "Grimoire", "menu.settings": "Settings",
+  "stat.level": "Lv. {n}",
+  "btn.back": "← Back", "btn.run": "▶ Cast spell",
+  "room.room": "Room", "room.boss": "Boss",
+  "fb.ok": "Spell cast! +{xp} XP", "fb.ko": "Missed, try again!", "fb.expected": "Expected: {v}",
+  "py.loading": "Loading Python (first time ~10 MB)…",
+  "toast.level": "🎉 Level {n} reached!", "toast.badge": "🏅 Badge: {name}",
+  "profile.badges": "Badges",
+  "badge.first": "First step", "badge.five": "Apprentice (5 rooms)", "badge.boss": "Boss slayer",
+  "set.lang": "Language", "set.theme": "Light / dark theme",
+  "set.export": "Export my progress", "set.import": "Import progress", "set.reset": "Reset everything",
+  "set.copy": "Copy this code:", "set.paste": "Paste your code:", "set.confirm": "Erase all progress?",
+
+  "d1.name": "The Crypt of Variables", "d1.intro": "A variable is a box storing a value. In Python there is no type to declare (unlike Java/C++): x = 5.",
+  "d1r1.q": "Which line creates a variable in Python?",
+  "d1r1.a": "x = 5", "d1r1.b": "int x = 5;", "d1r1.c": "var x := 5",
+  "d1r2.q": "Create the variable name with the value \"Merlin\" (in quotes).",
+  "d1r3.q": "What is the type of 3.14?",
+  "d1r3.a": "int", "d1r3.b": "float", "d1r3.c": "str",
+  "d1boss.q": "BOSS: add 5 to hp so print(hp) shows 15.",
+
+  "d2.name": "The Maze of Choices", "d2.intro": "if / elif / else: code picks its path. Indentation (4 spaces) replaces braces.",
+  "d2r1.q": "What comes after if mana > 5?",
+  "d2r1.a": "braces { }", "d2r1.b": "then", "d2r1.c": "a colon : then indentation",
+  "d2r2.q": "Inside the if, print the word cast.",
+  "d2boss.q": "BOSS: print odd if x is odd (use x % 2).",
+
+  "d3.name": "The Tower of Loops", "d3.intro": "for repeats code. range(3) gives 0, 1, 2.",
+  "d3r1.q": "What does range(3) produce?",
+  "d3r1.a": "0, 1, 2", "d3r1.b": "1, 2, 3", "d3r1.c": "0, 1, 2, 3",
+  "d3r2.q": "Print i in the loop to get 0 1 2 (one per line).",
+  "d3boss.q": "BOSS: print the numbers 1 to 5, one per line."
+}
