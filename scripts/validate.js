@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),path=require('path');
+const root=path.join(__dirname,'..');
+for(const f of ['js/app.js','js/world.js','js/battle.js','js/i18n.js'])new vm.Script(fs.readFileSync(path.join(root,f),'utf8'));
+const content=fs.readFileSync(path.join(root,'js/content.js'),'utf8');
+const ctx={window:{}}; vm.runInNewContext(content.replace(/window\.DUNGEONS[\s\S]*$/,''),ctx);
+const data=ctx.window.CONTENT;
+const fr=JSON.parse(fs.readFileSync(path.join(root,'i18n/fr.json'))),en=JSON.parse(fs.readFileSync(path.join(root,'i18n/en.json')));
+if(JSON.stringify(Object.keys(fr).sort())!==JSON.stringify(Object.keys(en).sort()))throw Error('i18n mismatch');
+const topics=[...new Set(data.questions.map(q=>q.topic))];
+const covered=new Set(data.npcs.flatMap(n=>n.topics));
+const missing=topics.filter(t=>!covered.has(t));
+if(missing.length)throw Error('NPC coverage missing: '+missing.join(', '));
+console.log(JSON.stringify({questions:data.questions.length,codeExercises:data.questions.filter(q=>q.type==='code').length,creatures:data.creatures.length,npcs:data.npcs.length,houses:data.houses.length,topics:topics.length,coverage:'PASS'}));
